@@ -14,11 +14,15 @@
         class="accent--text font-weight-light text-no-wrap"
         v-text="title"
       ></h2>
-      <v-tabs centered slider-color="transparent">
-        <v-tab href="/">Home</v-tab>
-        <v-tab href="#Profile">Profile</v-tab>
-        <v-tab href="#Works">Works</v-tab>
-        <v-tab href="#TechBlog">TechBlog</v-tab>
+      <v-tabs
+        centered
+        active-class="font-weight-bold"
+        slider-color="transparent"
+      >
+        <v-tab to="/">Home</v-tab>
+        <v-tab to="/profile">Profile</v-tab>
+        <v-tab to="/works">Works</v-tab>
+        <v-tab to="/techblog">TechBlog</v-tab>
       </v-tabs>
       <v-btn
         icon
