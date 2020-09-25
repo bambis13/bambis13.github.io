@@ -75,4 +75,8 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  env: {
+    is_maintenance: process.env.IS_MAINTENANCE || false,
+  },
 }

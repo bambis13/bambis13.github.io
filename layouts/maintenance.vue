@@ -14,16 +14,7 @@
         class="accent--text font-weight-light text-no-wrap"
         v-text="title"
       ></h2>
-      <v-tabs
-        centered
-        active-class="font-weight-bold"
-        slider-color="transparent"
-      >
-        <v-tab to="/">Home</v-tab>
-        <v-tab to="/profile">Profile</v-tab>
-        <v-tab to="/works">Works</v-tab>
-        <v-tab to="/techblog">TechBlog</v-tab>
-      </v-tabs>
+      <v-spacer></v-spacer>
       <v-btn
         icon
         color="accent"
@@ -59,7 +50,6 @@
 
 <script>
 export default {
-  middleware: 'maintenance',
   data() {
     return {
       title: 'bambis13.io',
